@@ -1,0 +1,9 @@
+C:\work\Examples\GameAutomation\InputDevicesSimulator.Tests\bin\Debug\InputDevicesSimulator.Tests.dll
+C:\work\Examples\GameAutomation\InputDevicesSimulator.Tests\bin\Debug\InputDevicesSimulator.Tests.pdb
+C:\work\Examples\GameAutomation\InputDevicesSimulator.Tests\bin\Debug\InputDevicesSimulator.dll
+C:\work\Examples\GameAutomation\InputDevicesSimulator.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\work\Examples\GameAutomation\InputDevicesSimulator.Tests\bin\Debug\InputDevicesSimulator.pdb
+C:\work\Examples\GameAutomation\InputDevicesSimulator.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\work\Examples\GameAutomation\InputDevicesSimulator.Tests\obj\Debug\InputDevicesSimulator.Tests.csprojResolveAssemblyReference.cache
+C:\work\Examples\GameAutomation\InputDevicesSimulator.Tests\obj\Debug\InputDevicesSimulator.Tests.dll
+C:\work\Examples\GameAutomation\InputDevicesSimulator.Tests\obj\Debug\InputDevicesSimulator.Tests.pdb

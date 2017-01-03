@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameAutomation", "GameAutomation\GameAutomation.csproj", "{C550E37D-123F-4268-8E54-3800DB0E6934}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageFinder", "ImageFinder\ImageFinder.csproj", "{0659FD06-714D-4CF2-980A-1CCD8A1514C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageFinder.Tests", "ImageFinder.Tests\ImageFinder.Tests.csproj", "{9CC3EFD1-E13D-47B2-90DF-1DEC5983DCFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visualizer", "Visualizer\Visualizer.csproj", "{184F4082-CC30-431F-B4EB-0D4A51D11A7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputDevicesSimulator", "InputDevicesSimulator\InputDevicesSimulator.csproj", "{43EBA58E-6E75-4DDE-AFDC-E8FA12960BCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputDevicesSimulator.Tests", "InputDevicesSimulator.Tests\InputDevicesSimulator.Tests.csproj", "{D2BC07FF-546E-4B03-8800-559AC48C7231}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C550E37D-123F-4268-8E54-3800DB0E6934}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C550E37D-123F-4268-8E54-3800DB0E6934}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C550E37D-123F-4268-8E54-3800DB0E6934}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C550E37D-123F-4268-8E54-3800DB0E6934}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0659FD06-714D-4CF2-980A-1CCD8A1514C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0659FD06-714D-4CF2-980A-1CCD8A1514C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0659FD06-714D-4CF2-980A-1CCD8A1514C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0659FD06-714D-4CF2-980A-1CCD8A1514C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CC3EFD1-E13D-47B2-90DF-1DEC5983DCFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CC3EFD1-E13D-47B2-90DF-1DEC5983DCFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CC3EFD1-E13D-47B2-90DF-1DEC5983DCFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CC3EFD1-E13D-47B2-90DF-1DEC5983DCFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{184F4082-CC30-431F-B4EB-0D4A51D11A7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{184F4082-CC30-431F-B4EB-0D4A51D11A7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{184F4082-CC30-431F-B4EB-0D4A51D11A7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{184F4082-CC30-431F-B4EB-0D4A51D11A7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43EBA58E-6E75-4DDE-AFDC-E8FA12960BCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43EBA58E-6E75-4DDE-AFDC-E8FA12960BCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43EBA58E-6E75-4DDE-AFDC-E8FA12960BCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43EBA58E-6E75-4DDE-AFDC-E8FA12960BCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2BC07FF-546E-4B03-8800-559AC48C7231}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2BC07FF-546E-4B03-8800-559AC48C7231}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2BC07FF-546E-4B03-8800-559AC48C7231}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2BC07FF-546E-4B03-8800-559AC48C7231}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

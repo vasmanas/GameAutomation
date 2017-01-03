@@ -1,0 +1,5 @@
+C:\work\Examples\GameAutomation\ImageFinder\bin\Debug\ImageFinder.dll
+C:\work\Examples\GameAutomation\ImageFinder\bin\Debug\ImageFinder.pdb
+C:\work\Examples\GameAutomation\ImageFinder\obj\Debug\ImageFinder.dll
+C:\work\Examples\GameAutomation\ImageFinder\obj\Debug\ImageFinder.pdb
+C:\work\Examples\GameAutomation\ImageFinder\obj\Debug\ImageFinder.csprojResolveAssemblyReference.cache

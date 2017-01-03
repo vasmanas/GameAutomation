@@ -1,0 +1,11 @@
+C:\work\Examples\GameAutomation\ImageFinder.Tests\bin\Debug\ImageFinder.Tests.dll
+C:\work\Examples\GameAutomation\ImageFinder.Tests\bin\Debug\ImageFinder.Tests.pdb
+C:\work\Examples\GameAutomation\ImageFinder.Tests\bin\Debug\ImageFinder.dll
+C:\work\Examples\GameAutomation\ImageFinder.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\work\Examples\GameAutomation\ImageFinder.Tests\bin\Debug\NSubstitute.dll
+C:\work\Examples\GameAutomation\ImageFinder.Tests\bin\Debug\ImageFinder.pdb
+C:\work\Examples\GameAutomation\ImageFinder.Tests\bin\Debug\NSubstitute.xml
+C:\work\Examples\GameAutomation\ImageFinder.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\work\Examples\GameAutomation\ImageFinder.Tests\obj\Debug\ImageFinder.Tests.csprojResolveAssemblyReference.cache
+C:\work\Examples\GameAutomation\ImageFinder.Tests\obj\Debug\ImageFinder.Tests.dll
+C:\work\Examples\GameAutomation\ImageFinder.Tests\obj\Debug\ImageFinder.Tests.pdb

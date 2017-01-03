@@ -1,0 +1,8 @@
+C:\work\Examples\GameAutomation\GameAutomation\bin\Debug\GameAutomation.exe.config
+C:\work\Examples\GameAutomation\GameAutomation\bin\Debug\GameAutomation.exe
+C:\work\Examples\GameAutomation\GameAutomation\bin\Debug\GameAutomation.pdb
+C:\work\Examples\GameAutomation\GameAutomation\obj\Debug\GameAutomation.exe
+C:\work\Examples\GameAutomation\GameAutomation\obj\Debug\GameAutomation.pdb
+C:\work\Examples\GameAutomation\GameAutomation\bin\Debug\InputDevicesSimulator.dll
+C:\work\Examples\GameAutomation\GameAutomation\bin\Debug\InputDevicesSimulator.pdb
+C:\work\Examples\GameAutomation\GameAutomation\obj\Debug\GameAutomation.csprojResolveAssemblyReference.cache

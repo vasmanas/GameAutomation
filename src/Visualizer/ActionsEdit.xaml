@@ -1,0 +1,57 @@
+﻿<Window x:Class="Visualizer.ActionsEdit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Visualizer"
+        mc:Ignorable="d"
+        Title="ActionsEdit" Height="300" Width="500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Column="0" Grid.Row="0" Orientation="Horizontal">
+            <StackPanel Orientation="Horizontal">
+                <Button Name="btnPlay" Width="20" Height="20" Click="btnPlay_Click" ToolTip="Ctrl + Shift + P">
+                    <Image Source="Images\Play.png"/>
+                </Button>
+                <Button Name="btnRecord" Width="20" Height="20" Click="btnRecord_Click" ToolTip="Ctrl + Shift + R">
+                    <Image Source="Images\Record.png"/>
+                </Button>
+                <Button Name="btnClear" Width="20" Height="20" Click="btnClear_Click" ToolTip="Clear">?</Button>
+            </StackPanel>
+            <ListView ItemsSource="{Binding Filters}">
+                <ListView.Resources>
+                    <Style TargetType="GridViewColumnHeader">
+                        <Setter Property="Visibility" Value="Collapsed" />
+                    </Style>
+                </ListView.Resources>
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn>
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <CheckBox Margin="0"
+                                          VerticalAlignment="Center"
+                                          IsChecked="{Binding Display,Mode=TwoWay}"/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn DisplayMemberBinding="{Binding Path=Action}" Width="200"></GridViewColumn>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </StackPanel>
+
+        <ListView Grid.Column="0" Grid.Row="1" ItemsSource="{Binding Actions}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Action}" Header="Action" Width="200"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Value}" Header="Value" Width="250"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>
