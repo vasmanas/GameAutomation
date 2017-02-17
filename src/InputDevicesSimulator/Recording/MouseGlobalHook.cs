@@ -20,6 +20,19 @@ namespace InputDevicesSimulator.Recording
         {
         }
 
+        public override void Dispose()
+        {
+            this.MouseMove = null;
+            this.LeftMouseButtonDown = null;
+            this.LeftMouseButtonUp = null;
+            this.LeftMouseButtonDrag = null;
+            this.RightMouseButtonDown = null;
+            this.RightMouseButtonUp = null;
+            this.RightMouseButtonDrag = null;
+
+            base.Dispose();
+        }
+
         protected override void Move(POINT pos)
         {
             this.MouseMove?.Invoke(pos.x, pos.y);

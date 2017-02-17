@@ -12,6 +12,14 @@ namespace InputDevicesSimulator.Recording
         {
         }
 
+        public override void Dispose()
+        {
+            this.KeyDown = null;
+            this.KeyUp = null;
+
+            base.Dispose();
+        }
+
         protected override void KeyboardKeyUp(VirtualKeyCode key)
         {
             this.KeyUp?.Invoke(key);

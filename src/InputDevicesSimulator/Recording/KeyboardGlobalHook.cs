@@ -16,7 +16,17 @@ namespace InputDevicesSimulator.Recording
         public KeyboardGlobalHook() : base()
         {
         }
-        
+
+        public override void Dispose()
+        {
+            this.KeyDown = null;
+            this.KeyUp = null;
+            this.ModifierDown = null;
+            this.ModifierUp = null;
+
+            base.Dispose();
+        }
+
         protected override void KeyboardKeyUp(VirtualKeyCode key)
         {
             if (this.IsModifierKey(key))

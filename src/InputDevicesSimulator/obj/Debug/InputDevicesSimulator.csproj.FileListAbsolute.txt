@@ -3,3 +3,8 @@ C:\work\Examples\GameAutomation\InputDevicesSimulator\bin\Debug\InputDevicesSimu
 C:\work\Examples\GameAutomation\InputDevicesSimulator\obj\Debug\InputDevicesSimulator.dll
 C:\work\Examples\GameAutomation\InputDevicesSimulator\obj\Debug\InputDevicesSimulator.pdb
 C:\work\Examples\GameAutomation\InputDevicesSimulator\obj\Debug\InputDevicesSimulator.csprojResolveAssemblyReference.cache
+C:\work\Source\Repos\GameAutomation\src\InputDevicesSimulator\bin\Debug\InputDevicesSimulator.dll
+C:\work\Source\Repos\GameAutomation\src\InputDevicesSimulator\bin\Debug\InputDevicesSimulator.pdb
+C:\work\Source\Repos\GameAutomation\src\InputDevicesSimulator\obj\Debug\InputDevicesSimulator.csprojResolveAssemblyReference.cache
+C:\work\Source\Repos\GameAutomation\src\InputDevicesSimulator\obj\Debug\InputDevicesSimulator.dll
+C:\work\Source\Repos\GameAutomation\src\InputDevicesSimulator\obj\Debug\InputDevicesSimulator.pdb

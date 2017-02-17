@@ -16,7 +16,7 @@ namespace InputDevicesSimulator.Recording
             this._hookID = this.SetHook(this._proc);
         }
         
-        public void Dispose()
+        public virtual void Dispose()
         {
             WinApiMethods.UnhookWindowsHookEx(this._hookID);
         }

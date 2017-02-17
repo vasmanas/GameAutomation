@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\work\Examples\GameAutomation\Visualizer\obj\Debug\
+C:\work\Source\Repos\GameAutomation\src\Visualizer\obj\Debug\
 Visualizer
 none
 false
 DEBUG;TRACE
-C:\work\Examples\GameAutomation\Visualizer\App.xaml
+C:\work\Source\Repos\GameAutomation\src\Visualizer\App.xaml
 6415131272
 
 191164586906
-161956692286
+161281174071
 ActionsEdit.xaml;ControlLense.xaml;ImageSearch.xaml;InputPlay.xaml;InputRecording.xaml;ToolboxMenu.xaml;
 
 False
