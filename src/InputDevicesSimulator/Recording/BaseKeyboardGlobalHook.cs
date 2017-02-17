@@ -39,13 +39,23 @@ namespace InputDevicesSimulator.Recording
 
                 //Debug.WriteLine("up   - {0}/{1}/{2}", KeyInterop.KeyFromVirtualKey((int)hookStruct.vkCode), hookStruct.vkCode, vkc);
 
-                if (wParam == (IntPtr)KeyboardMessages.WM_KEYDOWN || wParam == (IntPtr)KeyboardMessages.WM_SYSKEYDOWN)
+                switch ((KeyboardMessages)wParam)
                 {
-                    this.KeyboardKeyDown(vkc);
-                }
-                else if (wParam == (IntPtr)KeyboardMessages.WM_KEYUP || wParam == (IntPtr)KeyboardMessages.WM_SYSKEYUP)
-                {
-                    this.KeyboardKeyUp(vkc);
+                    case KeyboardMessages.WM_KEYDOWN:
+                    case KeyboardMessages.WM_SYSKEYDOWN:
+                        {
+                            this.KeyboardKeyDown(vkc);
+
+                            break;
+                        }
+
+                    case KeyboardMessages.WM_KEYUP:
+                    case KeyboardMessages.WM_SYSKEYUP:
+                        {
+                            this.KeyboardKeyUp(vkc);
+
+                            break;
+                        }
                 }
             }
 

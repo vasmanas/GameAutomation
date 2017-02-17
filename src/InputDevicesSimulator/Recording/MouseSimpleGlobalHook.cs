@@ -10,6 +10,7 @@ namespace InputDevicesSimulator.Recording
         public event Action<int, int> LeftMouseButtonUp;
         public event Action<int, int> RightMouseButtonDown;
         public event Action<int, int> RightMouseButtonUp;
+        public event Action<int> MouseWheelMove;
 
         public MouseSimpleGlobalHook() : base()
         {
@@ -22,6 +23,7 @@ namespace InputDevicesSimulator.Recording
             this.LeftMouseButtonUp = null;
             this.RightMouseButtonDown = null;
             this.RightMouseButtonUp = null;
+            this.MouseWheelMove = null;
 
             base.Dispose();
         }
@@ -49,6 +51,11 @@ namespace InputDevicesSimulator.Recording
         protected override void RightButtonUp(POINT pos)
         {
             this.RightMouseButtonUp?.Invoke(pos.x, pos.y);
+        }
+
+        protected override void WheelMove(int delta)
+        {
+            this.MouseWheelMove?.Invoke(delta);
         }
     }
 }

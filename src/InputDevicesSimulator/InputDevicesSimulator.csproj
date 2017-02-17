@@ -114,6 +114,7 @@
     <Compile Include="Simulation\SimulatePlayer.cs" />
     <Compile Include="Simulation\WindowsInputDeviceStateAdaptor.cs" />
     <Compile Include="Actions\WaitFor.cs" />
+    <Compile Include="Utils\IntExtensions.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

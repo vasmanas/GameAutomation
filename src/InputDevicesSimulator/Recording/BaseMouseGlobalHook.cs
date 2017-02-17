@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 using InputDevicesSimulator.Native;
+using InputDevicesSimulator.Utils;
 
 namespace InputDevicesSimulator.Recording
 {
@@ -31,6 +32,8 @@ namespace InputDevicesSimulator.Recording
 
         protected abstract void RightButtonUp(POINT pos);
 
+        protected abstract void WheelMove(int delta);
+
         private IntPtr SetHook(LowLevelProc proc)
         {
             using (Process curProcess = Process.GetCurrentProcess())
@@ -46,28 +49,52 @@ namespace InputDevicesSimulator.Recording
             {
                 var hookStruct = (MSLLHOOKSTRUCT)Marshal.PtrToStructure(lParam, typeof(MSLLHOOKSTRUCT));
 
-                if (MouseMessages.WM_MOUSEMOVE == (MouseMessages)wParam)
+                switch ((MouseMessages)wParam)
                 {
-                    this.Move(hookStruct.pt);
-                }
-                else if (MouseMessages.WM_LBUTTONDOWN == (MouseMessages)wParam)
-                {
-                    this.LeftButtonDown(hookStruct.pt);
-                }
-                else if (MouseMessages.WM_LBUTTONUP == (MouseMessages)wParam)
-                {
-                    this.LeftButtonUp(hookStruct.pt);
-                }
-                else if (MouseMessages.WM_RBUTTONDOWN == (MouseMessages)wParam)
-                {
-                    this.RightButtonDown(hookStruct.pt);
-                }
-                else if (MouseMessages.WM_RBUTTONUP == (MouseMessages)wParam)
-                {
-                    this.RightButtonUp(hookStruct.pt);
-                }
+                    case MouseMessages.WM_MOUSEMOVE:
+                        {
+                            this.Move(hookStruct.pt);
 
-                // TODO: mouse wheel
+                            break;
+                        }
+
+                    case MouseMessages.WM_LBUTTONDOWN:
+                        {
+                            this.LeftButtonDown(hookStruct.pt);
+
+                            break;
+                        }
+
+                    case MouseMessages.WM_LBUTTONUP:
+                        {
+                            this.LeftButtonUp(hookStruct.pt);
+
+                            break;
+                        }
+
+                    case MouseMessages.WM_RBUTTONDOWN:
+                        {
+                            this.RightButtonDown(hookStruct.pt);
+
+                            break;
+                        }
+
+                    case MouseMessages.WM_RBUTTONUP:
+                        {
+                            this.RightButtonUp(hookStruct.pt);
+
+                            break;
+                        }
+
+                    case MouseMessages.WM_MOUSEWHEEL:
+                        {
+                            // delta > 0 - wheel up
+                            // delta < 0 - wheel down
+                            this.WheelMove(hookStruct.mouseData.HighWord() / 120);
+
+                            break;
+                        }
+                }
             }
 
             return WinApiMethods.CallNextHookEx(_hookID, nCode, wParam, lParam);
