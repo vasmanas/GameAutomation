@@ -5,7 +5,6 @@ namespace InputDevicesSimulator.Simulation
 {
     public class WindowsInputDeviceStateAdaptor
     {
-
         /// <summary>
         /// Determines whether the specified key is up or down by calling the GetKeyState function. (See: http://msdn.microsoft.com/en-us/library/ms646301(VS.85).aspx)
         /// </summary>
